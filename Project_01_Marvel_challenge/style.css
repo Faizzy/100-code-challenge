@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font styles import */
+@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
+@font-face {
+    font-family: iron-man;
+    src: url(fonts/Stark\ Bold.woff);
+}
+@font-face {
+    font-family: avenger;
+    src: url(fonts/AVENGEANCE\ HEROIC\ AVENGER.woff);
+}
+
+
+/* Background image */
+body {
+    background-image: url(images/ironman_full_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Navbar and nav list style */
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+    .main-nav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin-right: 30px;
+        justify-content: flex-end;
+    }
+    .logo, li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    li a {
+        padding: 20px;
+        text-transform: uppercase;
+    }
+
+    li a:hover {
+        background: #fff;
+        color: #000;
+        font-family: avenger;
+    }
+
+    .main-nav li {
+        margin: 15px auto;
+    }
+
+    .logo {
+        display: inline-block;
+        font-size: 2rem;
+        margin-left: 20px;
+        font-family: avenger;
+        margin-top: 12px;
+    }
+
+    .logo span {
+        font-size: 3rem;
+    }
+
+    .logo:hover {
+        color: #000;
+    }
+
+/* Main heading style */
+.main-heading {
+    font-size: 4rem;
+    color: white;
+    font-family: iron-man;
+    background: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    text-align: center;
+    border: solid 5px #fff;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+/* Paragraph style */
+.para-one, .para-two {
+    color: #fff;
+    border: solid 5px #fff;
+    width: 600px;
+    height: 340px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+    .para-one {
+        margin-left: 40px;
+        margin-top: -40px;
+    }
+
+    .para-two {
+        margin-right: 50px;
+    }
+
+    .para-one, .para-two p {
+        font-size: 1.2rem;
+        font-family: 'Blinker' , sans-serif;
+        padding: 30px;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    }
+
+    .para-two p {
+        padding: 40px;
+    }
+
+    .para-two {
+        margin-top: 120px;
+    }
+
+
+/* Image styles */
+.picture-one {
+    margin-top: 80px;
+}
+
+.image-one img {
+    width: 600px;
+    height: 340px;
+    border: solid 3px #fff;
+}
+
+.image-two img {
+    width: 600px;
+    height: 340px;
+    border: solid 3px #fff;
+}
+
+
+.section-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* Footer styles */
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+    .footer-main {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        width: 100%;
+        text-align: left;
+        padding: 30px 20px;
+        margin-top: 20px;
+    }
+
+    .footer-main .footer-left,
+    .footer-main .footer-right {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .footer-main .footer-left {
+        width: 40%;
+    }
+
+    .footer-left h4 {
+        color: #fff;
+    }
+
+    .footer-main .footer-links {
+        color: #fff;
+        margin: 5px 0 5px;
+    }
+    .footer-main .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+        padding: 8px;
+    }
+
+    .footer-main .footer-copy {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .footer-main .footer-right {
+        width: 20%;
+    }
+
+    .footer-main .footer-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+    }
+    
+    .footer-main .footer-about span {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .footer-main .footer-icons {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-main .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: #33383b;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+    }
+
+
+/* Resposive background  */
+@media screen and (max-width: 1010px) {
+    body {
+        background-image: url(images/ironman_mid.jpeg);
+        background-size: cover;
+    }
+}
+
+
+/* Resposive background and main elements */
+@media screen and (max-width: 770px) {
+    body {
+        background-image: url(images/ironman_small.jpg);
+    }
+
+    .main-nav {
+        display: block;
+    }
+}
+
+/* responsive container */
+
+@media screen and (max-width: 880px) {
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .para-one {
+        margin: auto;
+    }
+    .para-two {
+        margin: auto;
+    }
+    .picture-one, .picture-two {
+        margin-left: 100px;
+    }
+
+    .picture-one {
+        margin-bottom: 40px;
+    }
+
+    .picture-two {
+        margin-top: 40px;
+    }
+
+    
+}
