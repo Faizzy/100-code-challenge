@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* Known issue: icons are not in proper shape -------------------
+while adding the facebook favicon it will not in perfect circle */
+/* Button is not in correct position while width is around 570px */
+/* Mobile device correct output is 400 x 375 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+
+
+.main-logo img {
+    padding-left: 80px;
+    padding-top: 40px;
+    width: 300px;
+    height: 100px;
+}
+
+.container section{
+    display: flex;
+    margin: 50px 40px 0 80px;
+}
+
+
+    .sub-section {
+        color: white;
+        padding: 50px;
+    }
+
+    .main-heading h3 {
+        font-size: 2.5rem;
+        font-family: 'Poppins' , sans-serif;
+        font-weight: 600;
+    }
+
+
+
+    .para p {
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    button{
+        padding: 15px 50px 15px 50px;
+        margin: 20px 0 0 0px;
+        border-radius: 30px;
+        width: 200px;
+        border: none;
+    }
+
+        button a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: hsl(257, 40%, 49%);
+            font-size: 1rem;
+        }
+
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+
+    .icons i{
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        border: solid 1px #fff;
+        border-radius: 100%;
+    }
+
+
+
+footer p {
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+
+    .main-logo img {
+        width: 200px;
+        height: 150px;
+        margin: -40px 0 0 -40px;
+    }
+    
+    .container section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px 0 40px;
+        justify-content: center;
+    }
+
+    
+        .para p {
+            font-size: 17px;
+            text-align: center;
+            margin: 0 -50px 0 -50px;
+        }
+
+        .main-heading h3 {
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+            text-align: center;
+            margin: 0 -50px 20px -50px;
+        }
+
+        button {
+            padding: 10px 80px 10px 80px;
+            width: 250px;
+            margin: 20px 0 0 -20px;
+        }
+
+        button a {
+            text-align: center;
+        }
+    
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px auto 40px auto;
+        }
+    
+
+
+}
