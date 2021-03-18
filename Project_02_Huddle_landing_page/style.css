@@ -85,12 +85,15 @@ body {
     margin-bottom: 10px;
 }
 
-    .icons i{
+     .icons i{
         color: white;
         margin: 10px;
         padding: 10px;
+        width: 40px;
+        height: 40px;
         border: solid 1px #fff;
         border-radius: 100%;
+        text-align: center;
     }
 
 
