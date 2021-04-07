@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(images/bg-pattern-top.svg) left -330px bottom 100px, url(images/bg-pattern-bottom.svg) right -250px top 350px;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.container {
+    background-color: #fff;
+    width: 350px;
+    height: 380px;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.card {
+    background: url(images/bg-pattern-card.svg) no-repeat;
+    border-radius: 10px;
+    height: 12rem;
+    width: auto;
+}
+
+.card-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+    .image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid 6px #fff;
+    }
+
+    .name h3 {
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: hsl(229, 23%, 23%);
+        margin-top: 15px;
+    }
+
+    .name span {
+        font-weight: 400;
+        color: hsl(227, 10%, 46%);
+        padding: 10px;
+    }
+
+    .place h3 {
+        font-family: 'Kumbh Sans', sans-serif;
+        color: hsl(227, 10%, 46%);
+        font-weight: 400;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    hr {
+        height: 1px;
+        background: #d9d9d9;
+        display: block;
+        width: 100%;
+        border: none;
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .list {
+        display: flex;
+        padding: 5px 10px;
+    }
+
+    .list-items {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        line-height: 1.5;
+        text-align: center;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-weight: 700;
+        color: hsl(229, 23%, 23%);
+        font-size: 18px;
+        padding: 20px 30px 20px 30px;
+    }
+
+        .list-items span {
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+            color: hsl(227, 10%, 46%);
+            font-size: 0.6rem;
+        }
+
+
+
+.attribution {
+    margin: 50px 0 0 40px;
+    font-family: 'Kumbh Sans';
+    color: #fff;
+}
+
+    .attribution a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+@media screen and (max-width: 375px) {
+    
+    body {
+        background: url(images/bg-pattern-top.svg) left -700px bottom 100px, url(images/bg-pattern-bottom.svg)right -700px top 300px;
+        background-repeat: no-repeat;
+        background-color: hsl(185, 75%, 39%);
+    }
+
+    .flex-items {
+        margin-top: 35%;
+    }
+
+    .container {
+        width: 320px;
+        height: 380px;
+        margin: auto;
+    }
+
+    /* hr {
+        margin-top: 30px;
+    } */
+
+    .attribution {
+        margin: 40px auto auto auto;
+    }
+}
+
